@@ -2,81 +2,87 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 :root {
-    scroll-behavior: smooth;
     --background-color: #f897e0;
     --amarillo--: #F2BB16;
-    --rosaclarito--: #F2F2F2;
+    --blancoclarito--: #F2F2F2;
     --verdeclarito--: #80DA5A;
     --celeste--: #AEDFF2;
     --verdeopaco--: #6DA653;
     --azuloscuro--: #171726 ;
 }
 
-body {
-    line-height: 1.6;
+html {
+    scroll-behavior: smooth;
 }
 
-main{
-    background-color: var(--background-color);
+body {
+    line-height: 1.6;
+    background: rgb(248,151,224);
+    background: radial-gradient(circle, #f897e0e2 10%, #86b68ef2 75%);
 }
 
 section {
-    padding: 50px 0;
+    padding: 65px 0;
 }
 
 /* HEADER 👇🏻 */
 
 header {
     background-color: #86b68e;
-    padding: 5px;
-    position: fixes;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    position: sticky;
     top: 0;
-    z-index: 1000;
+    width: 100%;
+    z-index: 1000; 
+    margin: 0;
+    padding: 0;
 }
 
-nav {
+#nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 12px;
+    padding: 5px;
 }
 
-nav img {
-    width: 5%;
-    border-radius: 15px;
+#nav img {
+    width: 4%;
+    border-radius: 45px;
     box-shadow: 10px 2px 20px -3px rgba(0, 0, 0, 0.75);
 }
 
-nav ul {
+#nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
 }
 
-nav ul li {
+#nav ul li {
     margin: 0 15px;
 }
 
-nav ul li a {
+#nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #b6549de2;
     font-weight: bold;
     font-size: 18px;
 }
 
-.ancla {
-    color: black;
+#nav svg {
+    color: #b6549de2;
 }
 
 /* MAIN 👇🏻 */
 
 #inicio {
     height: 520px;
-    padding: 0 0 ;
 }
 
 #parra {
@@ -100,7 +106,6 @@ nav ul li a {
     height: 520px;
     padding: 5rem;
     align-items: center;
-    background-color: #fff;
 }
 
 .title {
@@ -148,23 +153,6 @@ h2 {
 .service-item p,
 .additional-item p {
     font-size: 16px;
-}
-
-.contact {
-    text-align: center;
-    background-color: #f1e2dc;
-    padding: 20px;
-    border-top: 3px solid #b9958b;
-}
-
-.contact h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-.contact p {
-    font-size: 18px;
-    margin-bottom: 5px;
 }
 
 #card-container {
@@ -238,6 +226,8 @@ h2 {
 #about-me-photo img {
     width: 350px;
     height: 350px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5) ;
 }
 #parrafo {
     text-align: left;
@@ -247,8 +237,42 @@ h2 {
 
 /* FOOTER 👇🏻 */
 
+footer {
+    background: linear-gradient(122deg, rgba(248,151,224,0.8855742125951943) 10%, rgba(134,182,142,0.9499999829033176) 75%); 
+    box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, 0.5); 
+    bottom:0; 
+
+}
+
+.contact {
+    text-align: center;
+    background-color: #f1e2dc;
+    padding: 20px;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
 #container-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+
+#footer-redes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer-redes svg {
+    color: #b6549de2;
 }

@@ -4,11 +4,14 @@ window.addEventListener('scroll', function() {
     const footerTop = footer.getBoundingClientRect().top;
     const windowHeight = window.innerHeight;
 
+    // Si el footer está visible en la pantalla
     if (footerTop < windowHeight) {
-        whatsappButton.style.position = 'absolute';
-        whatsappButton.style.bottom = (windowHeight - footerTop + 20) + 'px'; 
+        // Ocultar el botón de WhatsApp
+        whatsappButton.style.opacity = '0';
+        whatsappButton.style.pointerEvents = 'none'; // Esto asegura que el botón no se pueda hacer clic cuando es invisible
     } else {
-        whatsappButton.style.position = 'fixed';
-        whatsappButton.style.bottom = '20px';
+        // Mostrar el botón de nuevo si el footer no está en la vista
+        whatsappButton.style.opacity = '1';
+        whatsappButton.style.pointerEvents = 'auto'; // Habilita la interactividad
     }
 });

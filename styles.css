@@ -8,11 +8,10 @@
 
 :root {
     --background-color: #f897e0;
-    --amarillo: #F2BB16;
+    --naranja: #F2BB16;
     --blancoclarito: #F2F2F2;
-    --verdeclarito: #80DA5A;
+    --verdeclarito: #86b68e;
     --celeste: #AEDFF2;
-    --verdeopaco: #6DA653;
     --azuloscuro: #171726;
 }
 
@@ -21,7 +20,7 @@ html {
 }
 
 body {
-    background: radial-gradient(circle, #f897e0e2 10%, #86b68ef2 75%);
+    background: radial-gradient(circle, var(--naranja) 10%, #86b68ef2 75%);
 }
 
 section {
@@ -51,7 +50,7 @@ section {
 /* HEADER 👇🏻 */
 
 header {
-    background-color: #86b68e;
+    background-color: var(--verdeclarito);
     padding: 5px;
     position: sticky;
     top: 0;
@@ -83,13 +82,43 @@ header {
 
 #nav ul li {
     margin: 0 15px;
+    position: relative; /* Necesario para el posicionamiento del submenú */
 }
 
 #nav ul li a {
     text-decoration: none;
-    color: #b6549de2;
+    color: var(--naranja);
     font-weight: bold;
     font-size: 18px;
+    cursor: pointer;
+}
+
+.submenu .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: var(--verdeclarito);
+    list-style: none;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.75);
+    z-index: 1000;
+}
+
+.submenu .dropdown li {
+    padding: 10px 20px;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+}
+
+.submenu .dropdown li a {
+    color: var(--naranja);
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu .dropdown li:hover {
+    background-color: #5ba868;
 }
 
 #navbar-redes {
@@ -102,8 +131,9 @@ header {
 #navbar-redes a {
     padding: 5px;
     font-size: 28px;
-    color: #b6549de2;
+    color: var(--naranja);
 }
+
 
 
 /* MAIN 👇🏻 */
@@ -368,6 +398,7 @@ h2 {
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
+    gap: 20px;
 }
 .contacto h2{
     font-size: 3rem;
@@ -395,7 +426,11 @@ h2 {
     width: 100%; 
     margin: 0 auto; 
 }
-
+.contacto p{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
 
 /* SWIPER 👇🏻 */
 
@@ -450,7 +485,7 @@ h2 {
 
 
 footer {
-    background: linear-gradient(122deg, rgba(248,151,224,0.8855742125951943) 10%, rgba(134,182,142,0.9499999829033176) 75%); 
+    background: linear-gradient(122deg, #f897e0e2 10%, rgba(134,182,142,0.9499999829033176) 75%); 
     box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, 0.5); 
     bottom:0; 
     z-index: 1;
@@ -489,7 +524,7 @@ footer {
 
 #container-empresa a {
     font-size: 28px;
-    color: #b6549de2;
+    color: var(--naranja);
 }
 #desarrolladores{
     display: flex;

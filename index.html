@@ -15,21 +15,31 @@
 
 <body>
 
-    <!-- Sección de navegación -->
+<!-- Sección de navegación -->
 
     <header>
         <nav class="nav" id="nav">
             <img id="Logo" class="Logo" src="./assets/img/LOGOOO.jpeg" alt="Logo">
             <ul id="navbar-principal" class="navbar-principal">
                 <li><a class="ancla" id="ancla" href="#">Inicio</a></li>
-                <li><a class="ancla" id="ancla" href="#servicios">Servicios</a></li>
+                <li class="submenu">
+                    <a class="ancla" id="ancla">Servicios</a>
+                    <ul class="dropdown">
+                        <li><a class="ancla" id="ancla" href="#servicios">Servicios Profesionales</a></li>
+                        <li><a class="ancla" id="ancla" href="#packherramientas">Packs de Herramientas</a></li>
+                        <li><a class="ancla" id="ancla" href="#serviciosempresas">Servicio para Empresas</a></li>
+                    </ul>
+                </li>
+    
                 <li><a class="ancla" id="ancla" href="#about-me">Sobre Mí</a></li>
                 <li><a class="ancla" id="ancla" href="#contacto">Contacto</a></li>
             </ul>
+            
             <div class="navbar-redes" id="navbar-redes">
-                <a target="_blank" class="ancla" id="ancla" href="https://www.instagram.com/catalyst.rrhh/"><i
-                        class="bi bi-instagram"></i></a>
-                <a id="ancla" class="ancla" href="http://"><i class="bi bi-linkedin"></i></a>
+                <a target="_blank" class="ancla" id="ancla" href="https://www.instagram.com/catalyst.rrhh/">
+                    <i class="bi bi-instagram"></i></a>
+                <a id="ancla" class="ancla" href="http://">
+                    <i class="bi bi-linkedin"></i></a>
             </div>
         </nav>
     </header>
@@ -113,8 +123,54 @@
                 </div>
             </div>
 
+            <section class="servicios" id="packherramientas">
+                <h2 id="secondary-title" class="secondary-title">Packs de Herramientas</h2>
+                <div class="card-container" id="card-container">
+                    <div class="card" id="card">
+                        <h2 class="secondary-title" id="secondary-title">Pack 1</h2>
+                        <img class="imagen-card" src="./assets/icons/curriculum_vitae_paper_icon_219447.svg"
+                            alt="Imagen ilustrativa de un cv">
+                        <p>Curriculum Vitae + Carta de Presentación.</p>
+                        <button id="btn">Más info</button>
+                    </div>
+                    <div class="card" id="card">
+                        <h2>Pack 2</h2>
+                        <img class="imagen-card" src="./assets/icons/linkedin.svg" alt="Icono de LinkedIn">
+                        <p>Curriculum Vitae + LinkedIn.</p>
+                        <button id="btn">Más info</button>
+                    </div>
+                    <div class="card" id="card">
+                        <h2>Pack 3</h2>
+                        <img class="imagen-card" src="./assets/icons/asesoria plataforma trabajo.svg"
+                            alt="imagen representativa de una asesoria en las plataformas de trabajo">
+                        <p>Curriculum Vitae + LinkedIn + Carta de Presentación.</p>
+                        <button id="btn">Más info</button>
+                    </div>
+                    <div class="card" id="card">
+                        <h2>Pack 4</h2>
+                        <img class="imagen-card" src="./assets/icons/Asesorias onlines.svg"
+                            alt="imagen representativa de una asesoria online">
+                        <p>3 Paginas de busqueda laboral.</p>
+                        <button id="btn">Más info</button>
+                    </div>
+                    <div class="card" id="card">
+                        <h2>Pack 5</h2>
+                        <img class="imagen-card" src="./assets/icons/redaccion de cartas.svg"
+                            alt="imagen ilustrativa de redaccion de cartas de presentación">
+                        <p>Curriculum Vitae + LinkedIn + Carta de presentación + 2 paginas de búsqueda laboral.</p>
+                        <button id="btn">Más info</button>
+                    </div>
+                    <div class="card" id="card">
+                        <h2>Pack 6</h2>
+                        <img class="imagen-card" src="./assets/icons/portafolio.svg"
+                            alt="imagen ilustrativa de desarrollo de portafolios">
+                        <p>Curriculum Vitae en Ingles + LinkedIn en ingles.</p>
+                        <button id="btn">Más info</button>
+                    </div>
+                </div>
+
         </section>
-        <section class="servicios" id="servicios">
+        <section class="servicios" id="serviciosempresas">
             <h2 id="secondary-title" class="secondary-title">Servicios para Empresas</h2>
             <div class="card-container" id="card-container">
                 <div class="card" id="card">
@@ -255,6 +311,7 @@
         <h2>¿Estas preparado para conseguir tu proximo trabajo?</h2>
         <button><a href="https://wa.me/3517133012" target="_blank"
                 rel="noopener noreferrer">¡Contactame!</a></button>
+        <p>Horario de atención: Lunes a Viernes de 10:00 a 20:00hs (Horario Argentina)</p>
     </div>
 </section>
 </main>
@@ -263,10 +320,11 @@
     <footer id="contacto" class="contact">
         <div id="container-footer">
             <div id="container-empresa">
-                <h2>Catalyst</h2>
+                <h2>Catalyst RRHH</h2>
                 <a target="_blank" class="ancla" id="ancla" href="https://www.instagram.com/catalyst.rrhh/"><i
                         class="bi bi-instagram"></i></a>
                 <a id="ancla" class="ancla" href="http://"><i class="bi bi-linkedin"></i></a>
+                
             </div>
             <div id="desarrolladores">
                 <div id="facheros">
@@ -275,9 +333,6 @@
                 <div id="facheros">
                     <a href="https://github.com/ulaiseees" target="_blank" rel="noopener noreferrer">Ulaiseees Dev <i class="bi bi-github"></i></a>
                 </div>
-            </div>
-            <div id="container-year">
-                <h2>2024</h2>
             </div>
         </div>
     </footer>

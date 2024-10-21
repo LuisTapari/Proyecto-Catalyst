@@ -1,3 +1,28 @@
+// Acoreón Servicios 👇🏻
+
+const serviciosMenu = document.querySelector('.submenu');
+const dropdownMenu = document.querySelector('.submenu .dropdown');
+
+dropdownMenu.style.display = 'none';
+
+serviciosMenu.addEventListener('click', function(e) {
+    e.stopPropagation();
+
+    if (dropdownMenu.style.display === 'none' || dropdownMenu.style.display === '') {
+        dropdownMenu.style.display = 'block';
+    } else {
+        dropdownMenu.style.display = 'none';
+    }
+});
+
+document.addEventListener('click', function(e) {
+    if (!serviciosMenu.contains(e.target)) {
+        dropdownMenu.style.display = 'none';
+    }
+});
+
+// Ícono Whatsapp 👇🏻
+
 window.addEventListener('scroll', function() {
     const footer = document.querySelector('footer');
     const whatsappButton = document.querySelector('.whatsapp-float');

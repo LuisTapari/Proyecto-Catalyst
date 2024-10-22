@@ -1,4 +1,4 @@
-// Acoreón Servicios 👇🏻
+// Acordeón Servicios 👇🏻
 
 const serviciosMenu = document.querySelector('.submenu');
 const dropdownMenu = document.querySelector('.submenu .dropdown');
@@ -21,6 +21,7 @@ document.addEventListener('click', function(e) {
     }
 });
 
+
 // Ícono Whatsapp 👇🏻
 
 window.addEventListener('scroll', function() {
@@ -29,14 +30,11 @@ window.addEventListener('scroll', function() {
     const footerTop = footer.getBoundingClientRect().top;
     const windowHeight = window.innerHeight;
 
-    // Si el footer está visible en la pantalla
     if (footerTop < windowHeight) {
-        // Ocultar el botón de WhatsApp
         whatsappButton.style.opacity = '0';
-        whatsappButton.style.pointerEvents = 'none'; // Esto asegura que el botón no se pueda hacer clic cuando es invisible
+        whatsappButton.style.pointerEvents = 'none'; 
     } else {
-        // Mostrar el botón de nuevo si el footer no está en la vista
         whatsappButton.style.opacity = '1';
-        whatsappButton.style.pointerEvents = 'auto'; // Habilita la interactividad
+        whatsappButton.style.pointerEvents = 'auto';
     }
 });

@@ -3,6 +3,15 @@ const cardBtn = document.querySelectorAll('#container-ebook');
 const modalClose = document.querySelectorAll('.modal__close');
 const modalCard = document.querySelectorAll('.pop-up-card');
 
+function hideText() {
+    document.querySelector('.texto-hover').style.display = 'none';
+}
+
+function showText() {
+    document.querySelector('.texto-hover').style.display = 'inline-block';
+}
+
+
 let activeModal = (modalClick) =>{
     modal[modalClick].classList.add('active-modal')
 }

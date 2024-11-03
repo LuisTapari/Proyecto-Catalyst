@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Catalyst RRHH</title>
-    <link rel="shortcut icon" href="./assets/img/Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/ari/img/LOGOOO.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
@@ -249,8 +249,10 @@
 
             <section id="ebook-container">
                 <div id="container-ebook">
-                    <img id="ebook-image" class="ebook-img" src="./assets/ari/img/mi-libro.jpeg" alt="Como hacer mi cv potenciado">
+                    <img id="ebook-image" class="ebook-img shake-bl" src="./assets/ari/img/mi-libro.jpeg" alt="Como hacer mi cv potenciado" onclick="hideText()">
+                    <span class="texto-hover" onclick="showText()">Haz click en mí</span>
                 </div>
+                
                 <div class="pop-up-container" id="ebook-text">
                     <div class="pop-up-card">
                     <div class="title-ebook">
@@ -294,18 +296,18 @@
                     </div>
                     <div id="about-me-info">
                         <p id="parrafo" class="parrafo">
-                            &#160; ¡Hola! Soy <strong id="text-effect">Ari</strong> de <strong id="text-effect">Catalyst
+                            &#160; ¡Hola! Soy <strong class="horario">Ari</strong> de <strong class="horario">Catalyst
                                 RH</strong>, tu aliada en la búsqueda laboral. Estoy emocionada de presentarte nuestros
                             exclusivos servicios diseñados para potenciar tu empleabilidad de manera efectiva.
                             <br>
                             &#160;Los mismos incluyen herramientas que van más allá de lo convencional, con <strong
-                                id="text-effect">palabras clave</strong> y redacción estratégica que aseguran destacar
+                                class="horario">palabras clave</strong> y redacción estratégica que aseguran destacar
                             ante
                             los filtros ATS utilizados por las empresas en sus procesos de selección. Garantizamos que
                             tu
-                            <strong id="text-effect">búsqueda laboral</strong> será más <strong
-                                id="text-effect">satisfactoria</strong> y tu camino al <strong
-                                id="text-effect">éxito</strong> estará respaldado.
+                            <strong class="horario">búsqueda laboral</strong> será más <strong
+                                class="horario">satisfactoria</strong> y tu camino al <strong
+                                class="horario">éxito</strong> estará respaldado.
                         </p>
                     </div>
                 </div>
@@ -315,50 +317,59 @@
                 <h2 class="titulo-sobre-mi">Testimonios</h2>
                 <div class="swiper mySwiper">
                     <ul class="swiper-wrapper">
-
+            
                         <li class="swiper-slide">
                             <div class="comment-header">
-                                <img src="assets/ari/editedTestimonios/Testimonio2.png" alt="">
+                                <img src="assets/ari/editedTestimonios/Testimonio2.png" alt="" class="testimonial-img">
+                            </div>
+                        </li>
+            
+                        <li class="swiper-slide">
+                            <div class="comment-header">
+                                <img src="assets/ari/editedTestimonios/Testimonio3.png" alt="" class="testimonial-img">
+                            </div>
+                        </li>
+            
+                        
+                        <li class="swiper-slide">
+                            <div class="comment-header">
+                                <img src="assets/ari/editedTestimonios/Testimonio4.png" alt="" class="testimonial-img">
                             </div>
                         </li>
 
                         <li class="swiper-slide">
                             <div class="comment-header">
-                                <img src="assets/ari/editedTestimonios/Testimonio3.png" alt="">
+                                <img src="assets/ari/editedTestimonios/Testimonio5.png" alt="" class="testimonial-img">
                             </div>
                         </li>
 
                         <li class="swiper-slide">
                             <div class="comment-header">
-                                <img src="assets/ari/editedTestimonios/Testimonio4.png" alt="">
+                                <img src="assets/ari/editedTestimonios/Testimonio6.png" alt="" class="testimonial-img">
                             </div>
                         </li>
 
                         <li class="swiper-slide">
                             <div class="comment-header">
-                                <img src="assets/ari/editedTestimonios/Testimonio5.png" alt="">
+                                <img src="assets/ari/editedTestimonios/Testimonio7.png" alt="" class="testimonial-img">
                             </div>
                         </li>
-
-                        <li class="swiper-slide">
-                            <div class="comment-header">
-                                <img src="assets/ari/editedTestimonios/Testimonio6.png" alt="">
-                            </div>
-                        </li>
-
-                        <li class="swiper-slide">
-                            <div class="comment-header">
-                                <img src="assets/ari/editedTestimonios/Testimonio7.png" alt="">
-                            </div>
-                        </li>
-
+            
                     </ul>
-                    <div aria-hidden="fal" class="swiper-pagination"></div>
+                    <div aria-hidden="false" class="swiper-pagination"></div>
                     <div aria-hidden="true" class="swiper-button-prev"></div>
                     <div aria-hidden="true" class="swiper-button-next"></div>
                 </div>
             </section>
-
+            
+            <!-- Modal para ver la imagen ampliada -->
+            <div id="imageModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modalImage" alt="Imagen ampliada">
+            </div>
+            
+            
+            
 
             <a href="https://wa.me/3517133012" target="_blank" class="whatsapp-float">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="50px"
@@ -370,7 +381,7 @@
                     <h2>¿Estas preparado para conseguir tu proximo trabajo?</h2>
                     <button><a href="https://wa.me/3517133012" target="_blank"
                             rel="noopener noreferrer">¡Contactame!</a></button>
-                    <p>Horario de atención: Lunes a Viernes de 10:00 a 20:00hs (Horario Argentina)</p>
+                    <p class="horario">Horario de atención: Lunes a Viernes de 10:00 a 20:00hs (Horario Argentina)</p>
                 </div>
             </section>
     </main>
